@@ -1,0 +1,44 @@
+:root {
+  --color-bg: #f6f8fa;
+  --color-card-bg: #ffffff;
+  --color-border: #d1d9e0;
+  --color-text: #1f2328;
+  --color-text-muted: #59636e;
+  --color-primary: #1f883d;
+
+  --font-base: Arial, Helvetica, sans-serif;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --max-width: 960px;
+  --max-width-narrow: 340px;
+}
+
+/* ===== Reset básico e box model ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: var(--max-width-narrow);
+  margin: 0 auto var(--spacing-md);
+}
